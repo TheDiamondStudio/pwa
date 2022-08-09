@@ -28,13 +28,14 @@
 <script src="https://yandex.ru/ads/system/context.js" async></script>
 <style>
     :root{
-        --theme-body-background-image: url(https://static.wikia.nocookie.net/incredibox/images/b/b5/Site-background-light/revision/latest?cb=20210720130811&path-prefix=ru);
+        --theme-body-background-image: url(Site-background-light.webp);
         --background-img-position: center center;
         --background-img-size: cover;
         --background-img-repeat: no-repeat;
         --background-img-attachment: fixed;
     }
 </style>
+
 </head>
 <body class="font-['Montserrat']" style="background-image: var(--theme-body-background-image);
 background-position: var(--background-img-position);
@@ -194,7 +195,12 @@ background-attachment: var(--background-img-attachment);
         });
           </script>
 
+<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 
+<script>
+  // Sends event to client
+  vkBridge.send('VKWebAppInit');
+</script>
       </body>
       
 </html>
