@@ -6,6 +6,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -70,79 +71,7 @@
     box-sizing: border-box
 }
 
-body {
-    margin: 0;
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
-    text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(27, 22, 66, 0)
-}
 
-hr {
-    margin: 1rem 0;
-    color: #EAF2FE;
-    background-color: currentColor;
-    border: 0;
-    opacity: 1
-}
-
-hr:not([size]) {
-    height: 1px
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-family: "DM Serif Display", serif;
-    font-weight: 500;
-    line-height: 1.2
-}
-
-h1,
-.h1 {
-    font-size: 2.25rem
-}
-
-h2,
-.h2 {
-    font-size: 1.75rem
-}
-
-h3,
-.h3 {
-    font-size: 1.25rem
-}
-
-h4,
-.h4 {
-    font-size: 1.125rem
-}
-
-h5,
-.h5 {
-    font-size: 1rem
-}
-
-h6,
-.h6 {
-    font-size: .875rem
-}
 
 p {
     margin-top: 0;
@@ -228,15 +157,7 @@ sup {
     top: -.5em
 }
 
-a {
-    color: #6658EA;
-    text-decoration: none
-}
 
-a:hover {
-    color: #5546e8;
-    text-decoration: none
-}
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -11035,379 +10956,6 @@ fieldset:disabled .btn {
 
 .font-serif {
     font-family: "DM Serif Display", serif !important
-}
-
-.fs-xxs {
-    font-size: .75rem !important
-}
-
-.fs-xs {
-    font-size: .875rem !important
-}
-
-.fs-sm {
-    font-size: 1rem !important
-}
-
-.fs-lg {
-    font-size: 1.25rem !important
-}
-
-.fs-1 {
-    font-size: 2.25rem !important
-}
-
-.fs-2 {
-    font-size: 1.75rem !important
-}
-
-.fs-3 {
-    font-size: 1.25rem !important
-}
-
-.fs-4 {
-    font-size: 1.125rem !important
-}
-
-.fs-5 {
-    font-size: 1rem !important
-}
-
-.fs-6 {
-    font-size: .875rem !important
-}
-
-.fst-italic {
-    font-style: italic !important
-}
-
-.fst-normal {
-    font-style: normal !important
-}
-
-.fw-light {
-    font-weight: 300 !important
-}
-
-.fw-lighter {
-    font-weight: lighter !important
-}
-
-.fw-normal {
-    font-weight: 400 !important
-}
-
-.fw-bold {
-    font-weight: 500 !important
-}
-
-.fw-bolder {
-    font-weight: 700 !important
-}
-
-.lh-1 {
-    line-height: 1 !important
-}
-
-.lh-sm {
-    line-height: 1.25 !important
-}
-
-.lh-base {
-    line-height: 1.6 !important
-}
-
-.lh-lg {
-    line-height: 2 !important
-}
-
-.text-start {
-    text-align: left !important
-}
-
-.text-end {
-    text-align: right !important
-}
-
-.text-center {
-    text-align: center !important
-}
-
-.text-decoration-none {
-    text-decoration: none !important
-}
-
-.text-decoration-underline {
-    text-decoration: underline !important
-}
-
-.text-decoration-line-through {
-    text-decoration: line-through !important
-}
-
-.text-lowercase {
-    text-transform: lowercase !important
-}
-
-.text-uppercase {
-    text-transform: uppercase !important
-}
-
-.text-capitalize {
-    text-transform: capitalize !important
-}
-
-.text-wrap {
-    white-space: normal !important
-}
-
-.text-nowrap {
-    white-space: nowrap !important
-}
-
-.text-break {
-    word-wrap: break-word !important;
-    word-break: break-word !important
-}
-
-.text-primary {
-    color: #6658EA !important
-}
-
-.text-secondary {
-    color: #575A7B !important
-}
-
-.text-success {
-    color: #2CD4A2 !important
-}
-
-.text-info {
-    color: #0dcaf0 !important
-}
-
-.text-warning {
-    color: #F5C070 !important
-}
-
-.text-danger {
-    color: #F9655B !important
-}
-
-.text-light {
-    color: #F3F8FF !important
-}
-
-.text-dark {
-    color: #1B1642 !important
-}
-
-.text-primary-dark {
-    color: #564CAF !important
-}
-
-.text-primary-light {
-    color: #687DED !important
-}
-
-.text-white {
-    color: #fff !important
-}
-
-.text-body {
-    color: #1B1642 !important
-}
-
-.text-muted {
-    color: #575A7B !important
-}
-
-.text-black-50 {
-    color: rgba(27, 22, 66, 0.5) !important
-}
-
-.text-white-50 {
-    color: rgba(255, 255, 255, 0.5) !important
-}
-
-.text-reset {
-    color: inherit !important
-}
-
-.text-white-20 {
-    color: rgba(255, 255, 255, 0.2) !important
-}
-
-.text-white-60 {
-    color: rgba(255, 255, 255, 0.6) !important
-}
-
-.text-white-80 {
-    color: rgba(255, 255, 255, 0.8) !important
-}
-
-.text-gray-300 {
-    color: #DCE0F3 !important
-}
-
-.text-gray-500 {
-    color: #8D9AAE !important
-}
-
-.text-gray-600 {
-    color: #575A7B !important
-}
-
-.text-gray-800 {
-    color: #342E6C !important
-}
-
-.text-stripe {
-    color: #6772E5 !important
-}
-
-.text-digital-ocean {
-    color: #2485FD !important
-}
-
-.text-airbnb {
-    color: #FF385C !important
-}
-
-.text-coinbase {
-    color: #0081C9 !important
-}
-
-.text-netflix {
-    color: #B81D24 !important
-}
-
-.text-dribbble {
-    color: #DA5988 !important
-}
-
-.text-pinterest {
-    color: #CB2027 !important
-}
-
-.text-instagram {
-    color: #3F5D87 !important
-}
-
-.text-opacity-25 {
-    --bs-text-opacity: .25
-}
-
-.text-opacity-50 {
-    --bs-text-opacity: .5
-}
-
-.text-opacity-75 {
-    --bs-text-opacity: .75
-}
-
-.text-opacity-100 {
-    --bs-text-opacity: 1
-}
-
-.bg-primary {
-    background-color: #6658EA !important
-}
-
-.bg-secondary {
-    background-color: #575A7B !important
-}
-
-.bg-success {
-    background-color: #2CD4A2 !important
-}
-
-.bg-info {
-    background-color: #0dcaf0 !important
-}
-
-.bg-warning {
-    background-color: #F5C070 !important
-}
-
-.bg-danger {
-    background-color: #F9655B !important
-}
-
-.bg-light {
-    background-color: #F3F8FF !important
-}
-
-.bg-dark {
-    background-color: #1B1642 !important
-}
-
-.bg-primary-dark {
-    background-color: #564CAF !important
-}
-
-.bg-primary-light {
-    background-color: #687DED !important
-}
-
-.bg-body {
-    background-color: #fff !important
-}
-
-.bg-white {
-    background-color: #fff !important
-}
-
-.bg-transparent {
-    background-color: rgba(0, 0, 0, 0) !important
-}
-
-.bg-dark-50 {
-    background-color: rgba(27, 22, 66, 0.5) !important
-}
-
-.bg-gray-900 {
-    background-color: #2B265A !important
-}
-
-.bg-gray-800 {
-    background-color: #342E6C !important
-}
-
-.bg-gray-300 {
-    background-color: #DCE0F3 !important
-}
-
-.bg-gray-200 {
-    background-color: #EAF2FE !important
-}
-
-.bg-white-10 {
-    background-color: rgba(255, 255, 255, 0.1) !important
-}
-
-.bg-white-20 {
-    background-color: rgba(255, 255, 255, 0.2) !important
-}
-
-.bg-opacity-10 {
-    --bs-bg-opacity: .1
-}
-
-.bg-opacity-25 {
-    --bs-bg-opacity: .25
-}
-
-.bg-opacity-50 {
-    --bs-bg-opacity: .5
-}
-
-.bg-opacity-75 {
-    --bs-bg-opacity: .75
-}
-
-.bg-opacity-100 {
-    --bs-bg-opacity: 1
 }
 
 .bg-gradient {
@@ -27242,8 +26790,9 @@ a.text-white-60:hover {
 
 .flickity-button {
     z-index: 1;
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 44px;
+    height: 44px;
+
     border-radius: 0;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     color: #fff;
@@ -27251,6 +26800,14 @@ a.text-white-60:hover {
     border-color: #6658EA;
     box-shadow: 0 0 6px rgba(27, 22, 66, 0.03), 0 14px 24px rgba(27, 22, 66, 0.06)
 }
+
+/*@media (min-width: 733px) {
+    .flickity-button {
+        width: 3.75rem;
+        height: 3.75rem;
+
+    }
+}*/
 
 .flickity-button:hover {
     color: #fff;
