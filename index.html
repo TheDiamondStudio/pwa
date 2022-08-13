@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="tailwind3.1.8.js"></script>
     <!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="flickity.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.css">
 <!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="flickity.pkgd.js"></script>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <meta name="author" content="TheDiamondStuio">
 <meta property="og:description" content="Самые выжные новости, из мира Incredibox">
 <meta property="description" content="Самые выжные новости, из мира Incredibox">
@@ -27,8 +28,6 @@
 <script>window.yaContextCb=window.yaContextCb||[]</script>
 <script src="https://yandex.ru/ads/system/context.js" async></script>
 
-<link rel="stylesheet" href="libs.bundle.css">
-<link rel="stylesheet" href="theme.bundle.css">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J71N3Z6VP6"></script>
@@ -87,10 +86,7 @@ background-attachment: var(--background-img-attachment);
             </div>
         </div>
     </nav>
-
-
-
-    <div class="pt-5 flickity-items-fade col-12 " data-flickity='{"pageDots": false, "adaptiveHeight": true}'>
+    <div class="pt-5 flickity-items-fade  " data-flickity='{"pageDots": false, "adaptiveHeight": true}' >
         <div class="carousel-cell">
             <div class="mx-auto">
             <script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-post="incredibox_ru/100" data-width="20%" data-userpic="false"></script></script>
@@ -126,9 +122,7 @@ background-attachment: var(--background-img-attachment);
             </div>
         </div>
     </div>
-    
       <style>
-        
         iframe{
     margin-left: auto;
     margin-right: auto;
@@ -208,11 +202,11 @@ background-attachment: var(--background-img-attachment);
           </script>
 
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-
 <script>
   // Sends event to client
   vkBridge.send('VKWebAppInit');
 </script>
+
       </body>
       
 </html>

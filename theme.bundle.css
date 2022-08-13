@@ -256,9 +256,7 @@ label {
     display: inline-block
 }
 
-button {
-    border-radius: 0
-}
+
 
 button:focus:not(:focus-visible) {
     outline: 0
@@ -26793,7 +26791,6 @@ a.text-white-60:hover {
     width: 44px;
     height: 44px;
 
-    border-radius: 0;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     color: #fff;
     background-color: #6658EA;
@@ -26864,7 +26861,7 @@ a.text-white-60:hover {
 }
 
 .flickity-button.previous::before {
-    content: '\ea19';
+    content: '\ea60';
 }
 
 .flickity-button.next {
@@ -26872,7 +26869,7 @@ a.text-white-60:hover {
 }
 
 .flickity-button.next::before {
-    content: '\ea1f';
+    content: '\ea61';
 }
 
 .flickity-button-icon {
