@@ -57,11 +57,10 @@ https://flickity.metafizzy.co
   cursor: pointer;
 }
 
-.flickity-button:focus {
+/*.flickity-button:focus {
   outline: none;
   box-shadow: 0 0 0 5px #19F;
-}
-
+}*/
 .flickity-button:active {
   opacity: 0.6;
 }
