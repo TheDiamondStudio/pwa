@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="Feed/js/FeedEk.js"></script>
+    <link rel="stylesheet" href="Feed/css/FeedEk.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    
     <!-- CSS -->
 <link rel="stylesheet" href="flickity.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>
@@ -23,6 +25,7 @@
 <meta property="og:description" content="Самые выжные новости, из мира Incredibox">
 <meta property="description" content="Самые выжные новости, из мира Incredibox">
 <link rel="shortcut icon" href="favicon.svg">
+
 <title>PWA | Incrediapp</title>
 <meta property="og:title" content="PWA | Incrediapp">
 <!-- Yandex.RTB -->
@@ -48,7 +51,7 @@
         --background-img-attachment: fixed;
     }
 </style>
-
+<link rel="stylesheet" href="https://d2s3ptptdai04x.cloudfront.net/get-flowbite-pro.3f699d00-8461-457b-8dc0-a4116225b0f5.css?Expires=1687519346&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMnMzcHRwdGRhaTA0eC5jbG91ZGZyb250Lm5ldC9nZXQtZmxvd2JpdGUtcHJvLjNmNjk5ZDAwLTg0NjEtNDU3Yi04ZGMwLWE0MTE2MjI1YjBmNS5jc3MiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODc1MTkzNDZ9fX1dfQ__&amp;Signature=kDB~QxIiY45bnuzsABhGWa14FmNaBoJX3w~~AcGks3gzmlsZmNb2I3VoCmDjTZEIuu31GdWME3U84htbct~9aQ0OIKgkWPzQp006IUUqjJyTyYu7BCzGcUOnH3WSEYyI-JcmS6nnicccssZOl-8AYUaThQOGDcwASlyaIFdxh8B0db2IYrvKHhEiBrej2hvQUcEKWpoJnAhC5wGLXJGMB2hpiu3JzHQnM34tRGG5~YztVoK44KDnRjdDTEDBZLHbq91wb8-duDiFDcEtEp~~ICSKO9PYc~WEqsSuU3Lx9ZEIvZnu1d4QjjLEH3-30L-tcxiS4A5UI7mQz7hOyfSUjw__&amp;Key-Pair-Id=K2J5W1U51CTOXP">
 <link rel="stylesheet" href="https://thediamondstudio.github.io/incredipop.css"> 
 <script src="https://thediamondstudio.github.io/tailwind3.1.8.js"></script>
 </head>
@@ -90,9 +93,18 @@ background-attachment: var(--background-img-attachment);
             </div>
         </div>
     </nav>
+    
+    <div id="divFeed"></div>
+      
+      <script>
+        $(document).ready(function () {
+       		$('#divFeed').FeedEk({
+				FeedUrl: 'https://rsshub.app/telegram/channel/incredibox_ru', MaxCount: 5
+			});
+        });
+      </script>
 
-    <rssapp-imageboard id="MBysxWZoQ0CDKcsq" style="max-width: 1440px;display: block;margin-left: auto;margin-right: auto;"></rssapp-imageboard><script src="https://widget.rss.app/v1/imageboard.js" type="text/javascript" async></script>
-   
+      
 
     <section
         class="mx-auto vkuiBanner vkuiBanner--android Banner Banner--android vkuiBanner--md-image Banner--md-image vkuiBanner--sz-m Banner--sz-m vkuiBanner--inverted Banner--inverted" style="max-width: 1440px;">
@@ -105,8 +117,7 @@ background-attachment: var(--background-img-attachment);
                 
             </div>
             <div class="vkuiBanner__content Banner__content"><span
-                    class="vkuiBanner__header Banner__header vkuiTitle Title vkuiTitle--l-2 Title--l-2 vkuiTitle--w-2 Title--w-2">Остальные
-                    новости<br>в телеграм канале</span><span
+                    class="vkuiBanner__header Banner__header vkuiTitle Title vkuiTitle--l-2 Title--l-2 vkuiTitle--w-2 Title--w-2">Мы в телеграм канале</span><span
                     class="vkuiBanner__subheader Banner__subheader vkuiText vkuiText--android Text Text--android vkuiText--w-regular Text--w-regular"><span>Русскоязычный
                         канал в Telegram по Incredibox.<br> Новости, Комьюнити, и другие интересности,<br> и все это в
                         около-свободной форме письма!</span></span>
@@ -192,75 +203,7 @@ background-attachment: var(--background-img-attachment);
   })
 })</script>
     
-<!-- Блок Preloader -->
-<div class="preloader">
-
-    <!-- Добавляем готовую структуру Preloader -->
-      <div class="preloader-spin flex items-center justify-center">
-        <button type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-black hover:bg-black-400 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
-          <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-          </svg>
-          Processing...
-        </button>
-      </div>
-  </div>
   
-   <style>
-/* Стили для основного блока Preloader */
-.preloader {
-/* Фиксируем блок на всю ширину и высоту окна, чтобы перекрывать все остальные элементы */
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-width: 100%;
-height: 100%;
-z-index: 9999;
-/* Центрируем анимацию Preloader */
-display: flex;
-align-items: center;
-justify-content: center;
-
-/* При загрузке страницы, Preloader сразу отображается */
-opacity: 1;
-visibility: visible;
-
-/* Добавляем затемнение */
-background-color: rgba(0,0,0,.5);
-
-/* Добавляем плавный переход */
-transition: opacity .3s, visibility 0s 0s;
-
-}
-
-/* Класс для скрытия Preloader */
-.preloader_hidden {
-visibility: hidden;
-opacity: 0;
-transition: opacity .4s, visibility 0s .4s;
-
-}
-.preloader-spin {
-    animation: swal2-show .3s cubic-bezier(.175,.885,.32,1.275); 
-}
-.preloader-spin-hide {
-    animation: swal2-hide .4s cubic-bezier(.175,.885,.32,1.275); 
-}
-
-  </style>
-  <script>
-  window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
-    const preloader = document.querySelector('.preloader') /* находим блок Preloader */
-    preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
-  })
-  window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
-    const preloader = document.querySelector('.preloader-spin') /* находим блок Preloader */
-    preloader.classList.add('preloader-spin-hide') /* добавляем ему класс для скрытия */
-  })
-  </script>
       <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     <!--ССылки-->
       <script>

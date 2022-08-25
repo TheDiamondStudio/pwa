@@ -1,0 +1,9 @@
+.itemContent p {
+    margin-bottom: 1rem;
+}
+.itemContent img {
+    border-radius: .5rem;
+}
+.feedEkList li:last-child {
+    border-bottom: none;
+}
