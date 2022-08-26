@@ -25,3 +25,12 @@
 blockquote p {
     display:none
 }
+blockquote img {
+    margin: 5px 0 2px 0;
+}
+blockquote {
+    border-left:.125rem solid #3390ec;
+padding-left:15px;
+    
+}
+
