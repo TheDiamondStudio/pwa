@@ -1,9 +1,27 @@
 .itemContent p {
     margin-bottom: 1rem;
+    word-break: break-all ;
+    word-wrap:break-word
 }
 .itemContent img {
     border-radius: .5rem;
 }
 .feedEkList li:last-child {
     border-bottom: none;
+}
+.itemContent p a {
+    --tw-text-opacity: 1;
+    color: rgb(28 100 242/var(--tw-text-opacity));
+    font-weight: 500;
+}
+.itemContent p a:hover {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+  }
+.itemTitle a{
+    word-break: break-all ;
+    word-wrap:break-word
+}
+blockquote p {
+    display:none
 }
