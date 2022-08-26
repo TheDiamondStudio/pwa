@@ -14,6 +14,7 @@
     color: rgb(28 100 242/var(--tw-text-opacity));
     font-weight: 500;
 }
+
 .itemContent p a:hover {
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
@@ -25,6 +26,17 @@
 blockquote p {
     display:none
 }
+blockquote b {
+    --tw-text-opacity: 1;
+    color: rgb(28 100 242/var(--tw-text-opacity));
+    font-weight: 500;
+}
+blockquote b a {
+    --tw-text-opacity: 1;
+    font-weight: 300;
+    color: rgb(107 114 128/var(--tw-text-opacity));
+}
+
 blockquote img {
     margin: 5px 0 2px 0;
 }
