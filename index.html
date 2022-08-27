@@ -24,13 +24,11 @@
 <meta property="og:description" content="Самые выжные новости, из мира Incredibox">
 <meta property="description" content="Самые выжные новости, из мира Incredibox">
 <link rel="shortcut icon" href="favicon.svg">
-
 <title>PWA | Incrediapp</title>
 <meta property="og:title" content="PWA | Incrediapp">
 <!-- Yandex.RTB -->
 <script>window.yaContextCb=window.yaContextCb||[]</script>
 <script src="https://yandex.ru/ads/system/context.js" async></script>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J71N3Z6VP6"></script>
 <script>
@@ -40,7 +38,9 @@
 
   gtag('config', 'G-J71N3Z6VP6');
 </script>
-
+<style>
+    
+</style>
 <style>
     :root{
         --theme-body-background-image: url(Site-background-light.webp);
@@ -77,10 +77,10 @@ background-attachment: var(--background-img-attachment);
             <div class="flex items-center">
                 <ul class="mx-auto flex flex-row mt-0 space-x-5 md:space-x-8 text-sm font-medium">
                     <li>
-                        <a href="#" class=" transition easy-in-out text-gray-800 hover:text-gray-500" aria-current="page">Новости</a>
+                        <button id="app" style="background-color:transparent" class=" transition easy-in-out text-gray-800  hover:text-gray-500">Скачать</button>
                     </li>
                     <li>
-                        <button id="app" style="background-color:transparent" class=" transition easy-in-out text-gray-800  hover:text-gray-500">Скачать</button>
+                        <button id="albums" style="background-color:transparent" class=" transition easy-in-out text-gray-800 hover:text-gray-500" aria-current="page">Албомы</button>
                     </li>
                     <li>
                         <button id="links" style="background-color:transparent" class="transition easy-in-out text-gray-800 hover:text-gray-500">Контакты</button>
@@ -88,6 +88,7 @@ background-attachment: var(--background-img-attachment);
                     <li>
                         <button id="social" style="background-color:transparent" class="transition easy-in-out text-gray-800  hover:text-gray-500">Ссылки</button>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -105,7 +106,8 @@ background-attachment: var(--background-img-attachment);
 
 
 
-      
+
+
 
     <section
         class="mx-auto vkuiBanner vkuiBanner--android Banner Banner--android vkuiBanner--md-image Banner--md-image vkuiBanner--sz-m Banner--sz-m vkuiBanner--inverted Banner--inverted" style="max-width: 1440px;">
@@ -134,41 +136,8 @@ background-attachment: var(--background-img-attachment);
             </div><span aria-hidden="true" class="vkuiTappable__hoverShadow Tappable__hoverShadow"></span>
         </div>
     </section>
-                            <style>
-                                .gradient {
-                                    height: 100%;
-                                    width: 100%;
-                                    background-image: linear-gradient(90deg,#1d4a8c 30%,rgba(29,74,140,0) 60%);
-                                }
-                                #meduza {
-                                    background-color: rgb(91, 155, 230);
-                                     background-image: none;
-                                      background-position: center;
-                                       background-size: cover;
-                                       background-repeat: no-repeat;
-                                }
-                                @media (min-width:759px) {
-                                    #meduza {
-                                        background-size: 70%;
-                                        background-position: right center;
-                                        background-color: rgb(91, 155, 230);
-                                         background-image: url('https://www.incredibox.com/img/home-v5-artwork1.jpg');
-                                    }
-                                }
-                                
-                                @media (max-width:700px) {
-                                    .gradient {
-                                        background-image: linear-gradient(90deg,#1d4a8c  30%,rgba(29,74,140,0) 100%);
-                                    }
-                                }
-                                @media (max-width:650px) {
-                                    .gradient {
-                                        background-image: linear-gradient(90deg,#1d4a8c  30%,rgba(29,74,140,0) 120%);
-                                    }
-                                }
-                            </style>
+
                             
-                        
 
 
     <style>
@@ -222,6 +191,22 @@ background-attachment: var(--background-img-attachment);
     })
     });
       </script>
+      <!--Альбомы-->
+      <script>
+        // Alert Modal Type
+        $(document).on('click', '#albums', function(e) {
+                Swal.fire({
+        title: '<strong>Альбомы</strong>',
+        html:
+            '<section class="mx-auto vkuiBanner vkuiBanner--android Banner Banner--android vkuiBanner--md-image Banner--md-image vkuiBanner--sz-m Banner--sz-m vkuiBanner--inverted Banner--inverted" style="max-width:1440px;padding:0 0"><div aria-disabled="true" disabled class="Banner__in vkuiTappable vkuiTappable--android Tappable Tappable--android vkuiTappable--sizeX-compact Tappable--sizeX-compact vkuiTappable--mouse Tappable--mouse bloc"><div aria-hidden="true" class="vkuiBanner__bg Banner__bg"><div id="album-unreleased" class="bg"><div class="gradient"></div><div class="bck-album"></div></div></div><div class="items-end text-start vkuiBanner__content Banner__content text-black album-txt"><div><span class="_WfIfkoGCi0vvUrnNs4M pb-3 text-start content-start grid vkuiBanner__header Banner__header vkuiTitle Title vkuiTitle--l-2 Title--l-2 vkuiTitle--w-2 Title--w-2 text-start"><span>The unreleased tracks</span></span><span class="text-start vkuiBanner__subheader Banner__subheader vkuiText vkuiText--android Text Text--android vkuiText--w-regular Text--w-regular text-black" style="color:#000;font-size:14px"><span>Мы переживаем это невероятное приключение рядом с вами уже почти 12 лет. От первой строки кода до последнего костюма Incredibox отправил нас в путешествие по морям эмоций. Сегодня наши коробки и жесткие диски переполнены воспоминаниями, моделями и незавершенными идеями. Неизданный сборник включает в себя подборку из 9 треков, которые никогда ранее не публиковались, и все они были записаны во время наших многочисленных демонстрационных этапов. Поскольку мы всегда любили их слушать, нам стыдно не поделиться ими с вами. Итак, как и на 10-м юбилейном альбоме, мы позаботились о том, чтобы переделать каждый трек специально для вас!</span></span><div class="pt-8 vkuiBanner__actions Banner__actions text-start"><a href="https://music.imusician.pro/a/FJzi4Py0/so-far-so-good-and-incredible-polo/incredibox-the-unreleased/" target="_blank" class="transition ease focus:ring-4 focus:outline-none vkuiButton Button vkuiButton--sz-m Button--sz-m vkuiButton--lvl-primary Button--lvl-primary vkuiButton--clr-overlay Button--clr-overlay vkuiButton--aln-center Button--aln-center vkuiButton--sizeY-regular Button--sizeY-regular vkuiTappable vkuiTappable--android Tappable Tappable--android vkuiTappable--sizeX-compact Tappable--sizeX-compact vkuiTappable--mouse Tappable--mouse"><span class="vkuiButton__in Button__in transition ease bg-blue-500 hover:bg-blue-400 rounded-lg"><span class="vkuiButton__content Button__content vkuiText vkuiText--android Text Text--android vkuiText--w-medium Text--w-medium text-white">Слушать</span></span><span aria-hidden="true" class="vkuiTappable__hoverShadow Tappable__hoverShadow"></span><span aria-hidden="true" class="vkuiFocusVisible FocusVisible vkuiFocusVisible--outside FocusVisible--outside"></span></a> <a href="https://incredibox.bandcamp.com/merch" target="_blank" class="transition ease focus:ring-4 focus:outline-none vkuiButton Button vkuiButton--sz-m Button--sz-m vkuiButton--lvl-primary Button--lvl-primary vkuiButton--clr-overlay Button--clr-overlay vkuiButton--aln-center Button--aln-center vkuiButton--sizeY-regular Button--sizeY-regular vkuiTappable vkuiTappable--android Tappable Tappable--android vkuiTappable--sizeX-compact Tappable--sizeX-compact vkuiTappable--mouse Tappable--mouse"><span class="vkuiButton__in Button__in transition ease bg-blue-500 hover:bg-blue-400 rounded-lg"><span class="vkuiButton__content Button__content vkuiText vkuiText--android Text Text--android vkuiText--w-medium Text--w-medium text-white">Пред-заказ</span></span><span aria-hidden="true" class="vkuiTappable__hoverShadow Tappable__hoverShadow"></span><span aria-hidden="true" class="vkuiFocusVisible FocusVisible vkuiFocusVisible--outside FocusVisible--outside"></span></a></div></div><span aria-hidden="true" class="vkuiTappable__hoverShadow Tappable__hoverShadow"></span></div></div></section><section class="mx-auto vkuiBanner vkuiBanner--android Banner Banner--android vkuiBanner--md-image Banner--md-image vkuiBanner--sz-m Banner--sz-m vkuiBanner--inverted Banner--inverted" style="max-width:1440px;padding:0 0"><div aria-disabled="true" disabled class="Banner__in vkuiTappable vkuiTappable--android Tappable Tappable--android vkuiTappable--sizeX-compact Tappable--sizeX-compact vkuiTappable--mouse Tappable--mouse bloc"><div aria-hidden="true" class="vkuiBanner__bg Banner__bg"><div id="album-10th" class="bg"><div class="gradient"></div><div class="bck-album-10th"></div></div></div><div class="items-end text-start vkuiBanner__content Banner__content text-black album-txt"><div><span class="_WfIfkoGCi0vvUrnNs4M pb-3 text-start content-start grid vkuiBanner__header Banner__header vkuiTitle Title vkuiTitle--l-2 Title--l-2 vkuiTitle--w-2 Title--w-2 text-start"><span>Incredibox 10<sup>th</sup> Anniversary</span></span><span class="text-start vkuiBanner__subheader Banner__subheader vkuiText vkuiText--android Text Text--android vkuiText--w-regular Text--w-regular text-black" style="color:#000;font-size:14px"><span>В сентябре 2019 года Incredibox отпраздновал свое 10-летие. По этому радостному случаю мы записали альбом! Наши 7 музыкальных атмосфер были (чудесно) перестроены, чтобы создать коллекцию из 7 эксклюзивных треков. Окунитесь в атмосферу вашего любимого приложения с эклектичным списком треков, бодрящей смесью джазовых грувов, хип-хоп-ритмов, сияющей поп-музыки, танцевальных флюидов, ритмов самбы, трэп-волн и радостного индийского гула. Парни и девушки, большое вам спасибо за то, что верили в нас с самого первого дня! Продолжайте создавать эти сумасшедшие ритмы и продолжайте делиться ими со всеми!</span></span><div class="pt-8 vkuiBanner__actions Banner__actions text-start"><a href="https://imusiciandigital.lnk.to/BbTXs" target="_blank" class="transition ease focus:ring-4 focus:outline-none vkuiButton Button vkuiButton--sz-m Button--sz-m vkuiButton--lvl-primary Button--lvl-primary vkuiButton--clr-overlay Button--clr-overlay vkuiButton--aln-center Button--aln-center vkuiButton--sizeY-regular Button--sizeY-regular vkuiTappable vkuiTappable--android Tappable Tappable--android vkuiTappable--sizeX-compact Tappable--sizeX-compact vkuiTappable--mouse Tappable--mouse"><span class="vkuiButton__in Button__in transition ease bg-blue-500 hover:bg-blue-400 rounded-lg"><span class="vkuiButton__content Button__content vkuiText vkuiText--android Text Text--android vkuiText--w-medium Text--w-medium text-white">Слушать</span></span><span aria-hidden="true" class="vkuiTappable__hoverShadow Tappable__hoverShadow"></span><span aria-hidden="true" class="vkuiFocusVisible FocusVisible vkuiFocusVisible--outside FocusVisible--outside"></span></a> <a href="https://incredibox.bandcamp.com/merch" target="_blank" class="transition ease focus:ring-4 focus:outline-none vkuiButton Button vkuiButton--sz-m Button--sz-m vkuiButton--lvl-primary Button--lvl-primary vkuiButton--clr-overlay Button--clr-overlay vkuiButton--aln-center Button--aln-center vkuiButton--sizeY-regular Button--sizeY-regular vkuiTappable vkuiTappable--android Tappable Tappable--android vkuiTappable--sizeX-compact Tappable--sizeX-compact vkuiTappable--mouse Tappable--mouse"><span class="vkuiButton__in Button__in transition ease bg-blue-500 hover:bg-blue-400 rounded-lg"><span class="vkuiButton__content Button__content vkuiText vkuiText--android Text Text--android vkuiText--w-medium Text--w-medium text-white">Пред-заказ</span></span><span aria-hidden="true" class="vkuiTappable__hoverShadow Tappable__hoverShadow"></span><span aria-hidden="true" class="vkuiFocusVisible FocusVisible vkuiFocusVisible--outside FocusVisible--outside"></span></a></div></div><span aria-hidden="true" class="vkuiTappable__hoverShadow Tappable__hoverShadow"></span></div></div></section>',
+            width: '100%',
+            showConfirmButton: false,
+            showCloseButton: true,
+        focusConfirm: false,
+        footer: '<a target="_blank" href="https://youtube.com/c/Diamond1895">Создатель приложения Diamond</a>'
+        })
+        });
+          </script>
         <!--Контакты-->
       <script>
         // Alert Modal Type
@@ -257,6 +242,7 @@ background-attachment: var(--background-img-attachment);
           </script>
 
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
 <script>
   // Sends event to client
   vkBridge.send('VKWebAppInit');
