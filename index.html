@@ -41,6 +41,7 @@
 <style>
     
 </style>
+
 <style>
     :root{
         --theme-body-background-image: url(Site-background-light.webp);
@@ -79,9 +80,7 @@ background-attachment: var(--background-img-attachment);
                     <li>
                         <button id="app" style="background-color:transparent" class=" transition easy-in-out text-gray-800  hover:text-gray-500">Скачать</button>
                     </li>
-                    <li>
-                        <button id="albums" style="background-color:transparent" class=" transition easy-in-out text-gray-800 hover:text-gray-500" aria-current="page">Албомы</button>
-                    </li>
+                    
                     <li>
                         <button id="links" style="background-color:transparent" class="transition easy-in-out text-gray-800 hover:text-gray-500">Контакты</button>
                     </li>
@@ -99,7 +98,7 @@ background-attachment: var(--background-img-attachment);
       <script>
         $(document).ready(function () {
        		$('#divFeed').FeedEk({
-				FeedUrl: 'https://rsshub.app/telegram/channel/incredibox_rss/showMediaTagInTitle=0&showFwdFrom=0?limit=20', MaxCount: 50
+				FeedUrl: 'https://rsshub.app/telegram/channel/incredibox_ru/showMediaTagInTitle=0&showFwdFrom=0?limit=20', MaxCount: 50
 			});
         });
       </script>
